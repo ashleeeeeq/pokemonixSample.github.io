@@ -10,94 +10,90 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px; /* Adds spacing between the sections */
-    padding: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/* Left Side - Buttons */
+.left-section,
+.right-section {
+  flex: 1;
+}
 
-  .left-section, .right-section {
-    flex: 1; /* Makes both sections take up equal space */
-  }
-  
-  /* Ensures the left section's content is centered */
-  .left-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-  .left-section p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
+.left-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
 
 .left-section .buttons button {
-    width: 280px; 
-    padding: 10px 20px;
-    font-size: 0.9rem; 
-  }
+  width: 280px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
 
-  .left-section .buttons button i {
-    font-size: 1rem;
-    left: 30px; 
-  }
-  
-  /* Ensures the right section's login form is centered */
-  .right-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.left-section .buttons button i {
+  font-size: 1rem;
+  left: 30px;
+}
 
-  /* Right Side - Login Button */
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right Side - Login Button */
 .right-section button {
-    background-color: #2a75bb; /* Pokémon Blue */
-    color: white;
-    width: 350px;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Hover Effect */
-  .right-section button:hover {
-    background-color: #ffcb05; /* Pokémon Yellow */
-    color: #2a75bb;
-  }
-  
-  /* Active (Click) Effect */
-  .right-section button:active {
-    transform: translateY(2px);
-  }
-  
-  /* Optional: Add Shadow for Depth */
-  .right-section button {
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .right-section button:hover {
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  }  
+  background-color: #2a75bb; 
+  color: white;
+  width: 350px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .right-section p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
+.right-section button:hover {
+  background-color: #ffcb05; 
+  color: #2a75bb;
+}
+
+.right-section button:active {
+  transform: translateY(2px);
+}
+
+.right-section button {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.right-section button:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.right-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
 
 h1 {
   color: #ffcb05;
@@ -164,7 +160,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; 
+  gap: 15px;
 }
 
 button {
@@ -176,7 +172,7 @@ button {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 10px;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -281,7 +277,6 @@ div[class^="magic-dust"] {
   border-style: solid;
 }
 
-/* Container for Proper Centering */
 .sparks-container {
   position: relative;
   display: flex;
@@ -418,7 +413,6 @@ div[class^="magic-dust"] {
   box-sizing: border-box;
 }
 
-/* Center Circle in the Poké Ball */
 .circle {
   position: absolute;
   left: 50%;
